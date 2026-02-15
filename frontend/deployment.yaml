@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: marwenachouri/approbation-frontend:5b18ee0b7998856193f79b9006345c69753b5869
+        image: marwenachouri/approbation-frontend:deea34e8cdbda93d4d9d958639a25558a4e14d10
         ports:
         - containerPort: 80
         env:
