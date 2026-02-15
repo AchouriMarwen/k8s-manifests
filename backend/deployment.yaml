@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: marwenachouri/approbation-backend:e2a1c367ce7517728c40dfce8a8c1814a61e83d7
+          image: marwenachouri/approbation-backend:cfb26d957970d13952c9bd0eb3229e8f69babc6b
           ports:
             - containerPort: 8080
           env:
