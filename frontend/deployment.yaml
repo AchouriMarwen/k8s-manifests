@@ -15,12 +15,12 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: seifeddineabidi/approbation-frontend:5b18ee0b7998856193f79b9006345c69753b5869
+        image: marwenachouri/approbation-frontend:5b18ee0b7998856193f79b9006345c69753b5869
         ports:
         - containerPort: 80
         env:
         - name: API_URL
-          value: "http://backend.192.168.2.189.nip.io"
+          value: "http://backend.192.168.2.81.nip.io"
         - name: RECAPTCHA_SITE_KEY
           value: "6LdDuhcrAAAAAHrytAMLMiwP_PGlS7y_cAKQMqHn"
         resources:

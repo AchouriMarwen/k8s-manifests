@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: seifeddineabidi/approbation-backend:22c7b50c42df89b18825ceea7bf91a60d532f69d
+          image: marwenachouri/approbation-backend:22c7b50c42df89b18825ceea7bf91a60d532f69d
           ports:
             - containerPort: 8080
           env:
@@ -30,7 +30,7 @@ spec:
             - name: SPRING_JPA_HIBERNATE_DDL_AUTO
               value: update
             - name: CAMUNDA_BPM_WEBAPP_CORS_ALLOWED_ORIGINS
-              value: http://frontend.192.168.2.189.nip.io,http://localhost:3000
+              value: http://frontend.192.168.2.81.nip.io,http://localhost:3000
             - name: OLLAMA_API_URL
               value: http://approbation-ollama.default.svc.cluster.local:11434/api/generate
             - name: QUERY_API_URL

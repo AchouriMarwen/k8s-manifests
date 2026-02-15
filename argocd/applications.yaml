@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/SeifeddineABIDI/k8s-manifests.git
+    repoURL: https://github.com/AchouriMarwen/k8s-manifests.git
     targetRevision: HEAD
     path: manifests
     kustomize:

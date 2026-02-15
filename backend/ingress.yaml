@@ -6,7 +6,7 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/enable-cors: "true"
-    nginx.ingress.kubernetes.io/cors-allow-origin: "http://frontend.192.168.2.189.nip.io"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "http://frontend.192.168.2.81.nip.io"
     nginx.ingress.kubernetes.io/cors-allow-methods: "GET, POST, PUT, DELETE, OPTIONS"
     nginx.ingress.kubernetes.io/cors-allow-headers: "DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization"
     nginx.ingress.kubernetes.io/cors-allow-credentials: "true"
@@ -14,7 +14,7 @@ metadata:
 spec:
   ingressClassName: public  # ✅ Add this line
   rules:
-    - host: backend.192.168.2.189.nip.io
+    - host: backend.192.168.2.81.nip.io
       http:
         paths:
           - path: /
