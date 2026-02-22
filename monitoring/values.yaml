@@ -1,7 +1,9 @@
 grafana:
+  enabled: true
   adminPassword: admin
 
 prometheus:
+  enabled: true
   prometheusSpec:
     storageSpec:
       volumeClaimTemplate:
@@ -10,3 +12,12 @@ prometheus:
           resources:
             requests:
               storage: 5Gi
+
+alertmanager:
+  enabled: true
+
+nodeExporter:
+  enabled: true
+
+kubeStateMetrics:
+  enabled: true
