@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://prometheus-community.github.io/helm-charts
-    chart: kube-prometheus-stack
-    targetRevision: 58.3.1
+    repoURL: https://github.com/AchouriMarwen/k8s-manifests.git
+    targetRevision: main
+    path: manifests/monitoring
     helm:
       valueFiles:
         - values.yaml
@@ -19,5 +19,3 @@ spec:
     automated:
       prune: true
       selfHeal: true
-    syncOptions:
-      - CreateNamespace=true
