@@ -1,1 +1,12 @@
-# Monitoring configuration will be added step by step
+grafana:
+  adminPassword: admin
+
+prometheus:
+  prometheusSpec:
+    storageSpec:
+      volumeClaimTemplate:
+        spec:
+          accessModes: ["ReadWriteOnce"]
+          resources:
+            requests:
+              storage: 5Gi
