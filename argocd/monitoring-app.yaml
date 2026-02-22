@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/AchouriMarwen/k8s-manifests.git
     targetRevision: main
-    path: manifests/monitoring
+    path: monitoring
     helm:
       valueFiles:
         - values.yaml
