@@ -9,10 +9,10 @@ spec:
   source:
     repoURL: https://prometheus-community.github.io/helm-charts
     chart: kube-prometheus-stack
-    targetRevision: 56.6.2
+    targetRevision: 57.2.0
     helm:
       valueFiles:
-        - values.yaml
+        - $values/monitoring/values.yaml
 
   destination:
     server: https://kubernetes.default.svc
@@ -24,3 +24,8 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
+
+  sources:
+    - repoURL: https://github.com/AchouriMarwen/k8s-manifests.git
+      targetRevision: main
+      ref: values
